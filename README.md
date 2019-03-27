@@ -28,4 +28,4 @@ MODULE DESCRIPTION
 We have used three different actors in this project , thereby three different modules.
 •	ADMIN MODULE – The admin module is specifically for the admin whose task is to assign each complaint to an engineer.
 •	ENGINEER MODULE – The engineer module is for those engineers or workers who fix the complaints assigned to them and provide a feedback for the same.
-•	UER MODULE – The user module is for the hostel residents or even the staff who would want to complain.
+•	USER MODULE – The user module is for the hostel residents or even the staff who would want to complain.
