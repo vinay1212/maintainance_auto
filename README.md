@@ -29,3 +29,82 @@ We have used three different actors in this project , thereby three different mo
 •	ADMIN MODULE – The admin module is specifically for the admin whose task is to assign each complaint to an engineer.
 •	ENGINEER MODULE – The engineer module is for those engineers or workers who fix the complaints assigned to them and provide a feedback for the same.
 •	USER MODULE – The user module is for the hostel residents or even the staff who would want to complain.
+
+Running the website using XAMPP
+ 
+
+
+
+
+
+
+
+
+
+
+
+OUTPUT
+User login page:
+
+
+
+
+ 
+
+
+Signup page for the user:
+ 
+
+Inside the user account:
+ 
+
+Registering a complaint:
+ 
+
+Engineer register form:
+ 
+
+
+Engineer login page:
+ 
+Inside view of engineer login:
+ 
+
+
+Accessing messages from admin:
+ 
+Admin login page:
+ 
+Inside the admin page:
+ 
+
+
+Admin profile:
+ 
+
+Complaint messages from users:
+ 
+
+
+General settings of the Admin:
+ 
+
+Users data:
+ 
+
+Assigning the available engineers:
+ 
+Checking engineer’s information:
+ 
+
+
+Viewing the user’s message:
+ 
+Assigning an engineer to solve the problem:
+ 
+
+Message successfully sent:
+ 
+
+CONCLUSION
+This project can help save time in many aspects and will be of much use for students that need to fix problems at a faster rate. With our project, we aim at making a digital well-being and less time consuming way to register complaints in an organized and systematic manner in VIT’s database. Our project will be take our an idea evaluation for VIT’s software development circle.
