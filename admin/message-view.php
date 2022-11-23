@@ -35,7 +35,7 @@
         <div class="col-lg-12 ">
 
           <?php
-          echo "<a class='button logout' href ='m_delete.php?id=$id' onClick=\"javascript:return confirm ('Are you really want to delete ?');\">Delete</a>";
+          echo "<a class='button logout' href ='m_delete.php?id=$id' onClick=\"javascript:return confirm ('Do you really want to delete ?');\">Delete</a>";
            ?>
 
            <br><br><br><br>
@@ -70,10 +70,10 @@
                echo "<tr> <td> <b> Phone no </b> </td>";
                echo "     <td> ".$phone_no."</td> </tr>";
 
-               echo "<tr> <td> <b> Subject </b> </td>";
+               echo "<tr> <td> <b> Location </b> </td>";
                echo "     <td> ".$subject."</td> </tr>";
 
-               echo "<tr> <td> <b> Complain </b> </td>";
+               echo "<tr> <td> <b> Complaint </b> </td>";
                echo "     <td> ".$complain."</td></tr>";
 
                echo "<tr> <td> <b> Refference </b> </td>";
@@ -109,7 +109,7 @@
 
 
   <footer>
-        <br><br>&copy 2019 <?php echo $web_name; ?>
+        <br><br><?php echo $web_name; ?>
   </footer>
     <script src="../files/js/jquery.js"></script>
     <script src="../files/js/bootstrap.min.js"></script>

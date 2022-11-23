@@ -4,9 +4,6 @@
   require '../core/config.php';
   require 'dummy-key.php';
 
-
-
-
  ?>
 
 <!DOCTYPE html>
@@ -28,7 +25,7 @@
 
     <div class="cover main" style="top:50px;">
       <?php if (isset($eng_session)===true) {echo "<h1> Welcome, ".$eng_session."</h1>";}
-       ?><a class="wid" href="../logout.php" onClick="javascript:return confirm ('Are you really want to delete ?');"> Logout </a>
+       ?><a class="wid" href="../logout.php" onClick="javascript:return confirm ('Do you want to logout ?');"> Logout </a>
 
        <p class="text-right">
           <?php echo date("d M , l "); ?>
@@ -39,13 +36,6 @@
 
         <h1>Profile</h1>
         <br><br>
-
-        <div class="col-lg-12">
-          <div class="quotes">
-              <p>Scientists Dream About Doing Great Things.Engineers Do Them<br>
-               <small>- James A Michener</small></p>
-          </div>
-        </div>
 
         <br><br><br><br><br><br><br>
         <!--dashboard-->
@@ -107,8 +97,8 @@
                     </div>
 
                     <div class="col-lg-6">
-                        <p>Kindly check Your inbox to get the message </p>
-                        <p>Go to your <a href="message.php">Inbox</a> </p>
+                        <p>Kindly check Your inbox to get the complaint </p>
+                        <p><a href="message.php">Checkout Complaints</a> </p>
                     </div>
 
                     <?php
@@ -155,7 +145,7 @@
     </div>
   </div>
     <footer>
-          <br><br>&copy 2019<?php echo $web_name; ?>
+          <br><br><?php echo $web_name; ?>
     </footer>
 
     <script src="../files/js/jquery.js"></script>

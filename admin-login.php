@@ -42,7 +42,8 @@
     <div class="cover admin text-center">
 
       <img src="" alt=""/>
-
+      <br>
+      <br>
       <br>
       <h2>Admin Login</h2>
     </div>
@@ -60,7 +61,6 @@
                 <br><br>
                 <button type="submit" class="log">Login</button>
                 <br><br>
-                <span class="red"><?php echo $message; ?></span>
               </form>
               <br>
         </div>

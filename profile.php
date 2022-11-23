@@ -24,7 +24,7 @@
         <nav class="nav_u">
           <ul>
             <li><a href="#">Profile</a></li>
-            <li><a href="message.php">Message</a></li>
+            <li><a href="message.php">Register Complaint</a></li>
           </ul>
         </nav>
 
@@ -42,33 +42,40 @@
 
                   <div class="col-lg-12">
 
-                      <h2>How to complain</h2>
-                      <br><br><br>
+                      <h2>Provide The Following</h2>
+                      <br>
 
                       <div class="col-lg-4">
                         <div class="quotes blg text-center">
                           <h3>First</h3>
-                            <p>You can complain directly with us you have been dealing with.  Complaints are often sorted out immediately this way.</p>
+                            <p>contact number </p>
                         </div>
                       </div>
 
                       <div class="col-lg-4">
                         <div class="quotes blg text-center">
                           <h3>Second</h3>
-                            <p>If you don’t know who to contact, or you have a name but no telephone number, then call our enquiries team on 1800 852 852.</p>
+                            <p>location of maintenance.</p>
                         </div>
                       </div>
 
                       <div class="col-lg-4">
                         <div class="quotes blg text-center">
                           <h3>Third</h3>
-                            <p>The Best way to complain you can use our online complaints form.</p>
+                            <p>description of complaint.</p>
                         </div>
                       </div>
 
                     <div class="col-lg-12">
                         <p>Your complaint will be recorded and dealt with by the most appropriate team or person in your area.</p>
                     </div>
+
+                    <div class="col-lg-12">
+                        <div class="quotes blg text-center">
+                          <h3><u><li><a href="message.php">Register Complaint</a></li><u></h3>
+                            
+                        </div>
+                      </div>
 
               <div class="content">
                 <div class="col-lg-12">
@@ -99,7 +106,7 @@
         </div>
       </div>
                 <footer>
-                    <br><br>&copy 2019 <?php echo $web_name; ?>
+                    <br><br><?php echo $web_name; ?>
                 </footer>
 
 

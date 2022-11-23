@@ -27,7 +27,7 @@
   <?php require 'nav.php'; ?>
 
   <div class="cover main" style="background:#40C4FF;">
-    <h1>Your Inbox,</h1>
+    <h1>Complaints List</h1>
   </div>
   <div class="animated fadeIn">
 
@@ -37,7 +37,7 @@
             $num_rows = mysql_num_rows($result);
             ?>
               <div class='admin-data'>
-                Messages
+                Total Complaints
                 <span class='button view' href=''><?php echo "$num_rows";?></a>
               </div>
               <br><br><br><br>
@@ -76,7 +76,7 @@
 
 
       <footer>
-            <br><br>&copy 2019 <?php echo $web_name; ?>
+            <br><br><?php echo $web_name; ?>
       </footer>
 
     <script src="../files/js/jquery.js"></script>

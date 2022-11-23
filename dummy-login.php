@@ -49,10 +49,8 @@
                 <br><br>
                 <button type="submit" class="log">Login</button>
                 <br><br>
-                <span class="red"><?php echo $message; ?></span>
               </form>
               <br>
-              Don't have an acccount ? <a href="dummy-register.php">Sign Up</a>
         </div>
       </div>
       <div class="links">

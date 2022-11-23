@@ -21,5 +21,5 @@ class MySqlDriver {
 $gLink=new MySqlDriver();
 
 
-$web_name = "Software Engineering Project - Hostel Management System";
+$web_name = "LNMIIT Maintenance Automation System";
 ?>

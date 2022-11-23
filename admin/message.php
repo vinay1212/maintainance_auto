@@ -34,7 +34,7 @@
             $num_rows = mysql_num_rows($result);
             ?>
               <div class='admin-data'>
-                Messages
+                Total Complaints
                 <span class='button view' href=''><?php echo "$num_rows";?></a>
               </div>
               <br><br><br><br>
@@ -73,7 +73,7 @@
   </div>
 
       <footer>
-            <br><br>&copy 2019 <?php echo $web_name; ?>
+            <br><br><?php echo $web_name; ?>
       </footer>
 
     <script src="../files/js/jquery.js"></script>

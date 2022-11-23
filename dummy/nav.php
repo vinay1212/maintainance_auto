@@ -5,7 +5,7 @@
 
       <ul>
         <li><a href="profile.php">Profile</a></li>
-        <li><a href="message.php">Message</a></li>
+        <li><a href="message.php">Complaints</a></li>
 
       </ul>
 

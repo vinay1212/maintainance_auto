@@ -44,7 +44,7 @@
     <div class="animated fadeIn">
 
 
-    <div class="cover user text-center" style="background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);;background-size: cover">
+    <div class="cover user text-center" style="background: #4db6ac url('files\img\lnm.jpeg') linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);;background-size: cover">
           
 
       <br>
@@ -58,14 +58,13 @@
         <div class="col-lg-12 text-center">
               <form class="" method="post" autocomplete="off">
                 <label for="username"></label>
-                <input type="email" name="email" placeholder="Email" id="email">
+                <input pattern='^[a-zA-Z0-9+_.-]+@lnmiit.ac.in$' required type="text" name="email" placeholder="Email" id="email">
                 <br><br>
                 <label for="password"></label>
                 <input type="password" name="password" placeholder="password" id="pass">
                 <br><br>
                 <button type="submit" class="log">Login</button>
                 <br><br>
-                <span class="red"><?php echo $message; ?></span>
               </form>
               <br>
                 Don't have an acccount ? <a href="signup.php">Sign Up  </a>

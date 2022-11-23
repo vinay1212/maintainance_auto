@@ -35,27 +35,25 @@
 
 
     <div class="cover user text-center">
-      <svg fill="#fff" height="148" viewBox="0 0 24 24" width="148" xmlns="http://www.w3.org/2000/svg" class="shad">
+      <!-- <svg fill="#fff" height="148" viewBox="0 0 24 24" width="148" xmlns="http://www.w3.org/2000/svg" class="shad">
           <path d="M0 0h24v24H0z" fill="none"/>
           <path d="M5 16c0 3.87 3.13 7 7 7s7-3.13 7-7v-4H5v4zM16.12 4.37l2.1-2.1-.82-.83-2.3 2.31C14.16 3.28 13.12 3 12 3s-2.16.28-3.09.75L6.6 1.44l-.82.83 2.1 2.1C6.14 5.64 5 7.68 5 10v1h14v-1c0-2.32-1.14-4.36-2.88-5.63zM9 9c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm6 0c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1z"/>
-      </svg>
-      <br>
+      </svg> -->
+      <br><br><br>
       <h2>Sign up</h2>
     </div>
 
       <div class="padd">
         <div class="col-lg-12 text-center">
               <form class="" method="post" autocomplete="off">
-                <input type="text" name="name" placeholder="Your Name">
+                <input pattern='^[a-zA-Z]+$' required type="text" name="name" placeholder="Your Name">
                 <br><br>
-                <input type="text" name="username" placeholder="Your Username">
+                <input pattern='^[a-zA-Z0-9+_.-]+$' required type="text" name="username" placeholder="Your Username">
                 <br><br>
-                <input type="text" name="email" placeholder="Your Email">
+                <input pattern='^[a-zA-Z0-9+_.-]+@lnmiit.ac.in$' required type="text" name="email" placeholder="Your Email">
                 <br><br>
                 <input type="password" name="password" placeholder="password">
-                <br><br>
                 <?php echo "<p>".$message."</p>"; ?>
-                <br><br>
                 <button type="submit" class="log">Sign up</button>
                 <br><br>
               </form>

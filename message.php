@@ -31,7 +31,7 @@
   <body>
     <div class="cover user text-center" style="height:120px;">
       <br>
-      <h2>Your Complain</h2>
+      <h2>Your Complaint</h2>
     </div>
     <?php require 'nav-profile.php'; ?>
     <div class="animated fadeIn">
@@ -62,7 +62,7 @@
             <div class="container">
               <div class="panel panel-default">
                   <div class="panel-body">
-                      <h2>Your Refference no : &nbsp;&nbsp;&nbsp;&nbsp;<?php echo $ref;
+                      <h2>Reference no : &nbsp;&nbsp;&nbsp;&nbsp;<?php echo $ref;
                       echo"<p><span class='error'>".$error."</p></span>";
                       echo "<p><span class='message'>".$message."</p></span>";
                       ?></h2>
@@ -70,32 +70,32 @@
               </div>
               <table>
                 <tr>
-                  <td class="text-left">Your Refference no</td>
+                  <td class="text-left">Reference no</td>
                   <td class="text-left"><div class="dis_b"><?php echo $ref;  ?></div></td>
                 </tr>
                 <tr>
-                  <td class="text-left">Your Username</td>
+                  <td class="text-left">Username</td>
                   <td class="text-left"><div class="dis_b"><?php echo $username;?></div></td>
                 </tr>
                 <tr>
-                  <td class="text-left">Your User ID</td>
+                  <td class="text-left">User ID</td>
                   <td class="text-left"><div class="dis_b"><?php echo $alpha.$id;  $user_id = $id;?></div></td>
                 </tr>
                 <tr>
-                  <td class="text-left">Your Your Email ID</td>
+                  <td class="text-left">Email ID</td>
                   <td class="text-left"><div class="dis_b"><?php echo $email;?></div></td>
                 </tr>
                 <tr>
-                  <td class="text-left">Your Contact Number *</td>
-                  <td><input type = "text" name = "phoneno" maxlength=10 placeholder = "Your Phone number">  </td>
+                  <td class="text-left">Contact Number *</td>
+                  <td><input type = "text" name = "phoneno" maxlength=10 minlength=10 placeholder = "Phone number">  </td>
                 </tr>
                 <tr>
-                  <td class="text-left">Your Subject *</td>
-                  <td><input type="text" name = "subject" placeholder = "Subject"></td>
+                  <td class="text-left">Location *</td>
+                  <td><input type="text" name = "subject" placeholder = "Location"></td>
                 </tr>
                 <tr>
-                  <td class="text-left">Your Complain *</td>
-                  <td><textarea name="complain" rows="8" cols="80" placeholder="Your complain"></textarea></td>
+                  <td class="text-left">Complaint *</td>
+                  <td><textarea name="complain" rows="8" cols="80" placeholder="complaint"></textarea></td>
                 </tr>
                 <tr><td></td><td></td></tr>
                 <tr>
@@ -109,7 +109,7 @@
       </div>
     </div>
       <footer>
-            <br><br>&copy 2019 <?php echo $web_name; ?>
+            <br><br><?php echo $web_name; ?>
       </footer>
     <script src="files/js/jquery.js"></script>
     <script src="files/js/bootstrap.min.js"></script>

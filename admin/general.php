@@ -71,17 +71,14 @@
                   <tr>
                       <td><h4>Update your data</h4><br><br></td>
                   </tr>
-                  <tr>
-                    <td>Last Updated on :</td>
-                    <td> <?php echo $arry1['up_time'];?></td>
-                  </tr>
+                  
                   <tr>
                     <td>Name</td>
-                    <td><input type="text" name="name" placeholder="<?php echo $arry1['name'];?>"></td>
+                    <td><input pattern='^[a-zA-Z]+$' type="text" name="name" placeholder="<?php echo $arry1['name'];?>"></td>
                   </tr>
                   <tr>
                     <td>Username</td>
-                    <td><input type="text" name="username" placeholder="<?php echo $arry1['username'];?>"></td>
+                    <td><input required type="text" name="username" placeholder="<?php echo $arry1['username'];?>"></td>
                   </tr>
                   <tr>
                     <td>Password</td>

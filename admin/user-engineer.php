@@ -58,7 +58,7 @@
           </table>
           <br><br><br><br>
           <?php
-          echo "<a class='button logout' href ='delete_e.php?id=$id' onClick=\"javascript:return confirm ('Are you really want to delete ?');\">Delete</a>";
+          echo "<a class='button logout' href ='delete_e.php?id=$id' onClick=\"javascript:return confirm ('Do you really want to delete ?');\">Delete</a>";
            ?>
         </div>
       </div>

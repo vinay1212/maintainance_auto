@@ -51,9 +51,8 @@
       <?php
       if (isset($_SESSION['username'])===true) {echo "<h1> Welcome, ".$_SESSION['username']."</h1>";}
        ?>
-       <a class="button logout" href="../logout.php" onClick="javascript:return confirm ('Are you really want to delete ?');"> Logout </a>
+       <a class="button logout" href="../logout.php" onClick="javascript:return confirm ('Do you want to logout ?');"> Logout </a>
        &nbsp;&nbsp;&nbsp;
-       <a href="info.php" class="button bor">Info</a>
 
        <p class="text-right">
           <?php echo date("l, d M"); ?>
@@ -87,11 +86,11 @@
             </div>
 
             <div class="track red">
-                Complains <br> <p><?php echo $count_cmp;?></p>
+                Complaints <br> <p><?php echo $count_cmp;?></p>
             </div>
 
             <div class="track blue">
-                Complains forwarded <br> <p><?php echo $count_frd;?></p>
+                Complaints forwarded <br> <p><?php echo $count_frd;?></p>
             </div>
 
           </div>
@@ -142,7 +141,7 @@
       <div class="col-lg-12">
         <div class="post_content">
           <div class="text-center">
-            <h2>Anything on your mind</h2><br><br>
+            <h2>Post Announcements</h2><br><br>
             <form class="" action="" method="post">
                 <input type="text" class="post" name="subject" placeholder="Subject"/><br><br>
                 <textarea name="story" class="post" rows="3" cols="30" placeholder="Story"></textarea><br><br>
@@ -166,7 +165,7 @@
               echo "<div class='glow'> ";
               echo "<h4 class='heading'> Heading : ".$data['subject']."</h4>";
               echo "<p> Story : ".$data['story']."<br>";
-              echo "<div class='text-right'>  <a class ='button logout' href ='delete_posts.php?id=$id' onClick=\"javascript:return confirm ('Are you really want to delete ?');\">Delete</a>";
+              echo "<div class='text-right'>  <a class ='button logout' href ='delete_posts.php?id=$id' onClick=\"javascript:return confirm ('Do you want to logout ?');\">Delete</a>";
               echo "</p></div></div> ";
              }
             ?>
@@ -183,7 +182,7 @@
 
 
     <footer>
-          <br><br>&copy; 2019 <?php echo $web_name; ?>
+          <br><br><?php echo $web_name; ?>
     </footer>
 
     <script src="../files/js/jquery.js"></script>

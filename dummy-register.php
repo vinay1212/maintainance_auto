@@ -36,15 +36,15 @@
           <h2>Engineer Register Form </h2>
           <br><br>
               <form class="" method="post" autocomplete="off">
-                <input type="text" name="name" placeholder="Name"/>
+                <input pattern='^[a-zA-Z]+$' required type="text" name="name" placeholder="Name"/>
                 <br><br>
-                <input type="text" name="username" placeholder="Username"/>
+                <input required type="text" name="username" placeholder="Username"/>
                 <br><br>
-                <input type="text" name="email" placeholder="Email"/>
+                <input pattern='^[a-zA-Z0-9+_.-]+@lnmiit.ac.in$' required type="text" name="email" placeholder="Email"/>
                 <br><br>
-                <input type="text" name="post" placeholder="Designation"/>
+                <input required type="text" name="post" placeholder="Department"/>
                 <br><br>
-                <input type="password" name="password" placeholder="password"/>
+                <input required type="password" name="password" placeholder="password"/>
                 <?php echo "<p>".$message."</p>"; ?>
                 <br><br>
                 <button type="submit" class="log">Sign up</button>

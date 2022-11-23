@@ -1,11 +1,8 @@
 <footer>
   <div class="foonav">
-      <a href="blog/blog.php">Blog </a> &nbsp;&nbsp;|
-      <a href="blog/documentation.php">Documentaion</a>
-
+  <!-- &nbsp;&nbsp <a href="blog/blog.php">Announcements </a> &nbsp;&nbsp; -->
   </div>
 
-  &copy 2019
   <?php echo $web_name; ?>
 
 </footer>

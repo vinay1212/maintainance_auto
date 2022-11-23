@@ -1,5 +1,5 @@
 <?php
- $web_name = "Hostel Management System";
+ $web_name = "LNMIIT Maintenance Automation System";
  ?>
 <!DOCTYPE html>
 <html>
@@ -26,8 +26,8 @@
   <div class="animated fadeIn">
     <header class="custom_header">
 
-        <h1>Complaint Management System</h1>
-        <p>We aim to provide an excellent and consistent service to all our customers through our customer promise.</p>
+        <h1>Maintenance Automation System</h1>
+        <p>We aim to provide an excellent and consistent service to all our students, staff and residents of LNMIIT.</p>
     </header>
 
     <div class="col-lg-12"><!--col-lg-12-->
@@ -56,10 +56,6 @@
             <p>We aim to provide an excellent and consistent service to all our customers through our customer promise. If you aren’t satisfied with any aspect of our service, let us know so we can resolve the matter as quickly as possible.<br><br>The complaints procedure is set out in 3 stages below.</p>
 
             <h1 id="complain">How to complain</h1>
-            <p>You can complain directly to the person you have been dealing with. Complaints are often sorted out
-              immediately this way.<br>
-              If you don’t know who to contact, or you have a name but no telephone number, then call our enquiries team on 0300 060 3900.<br>
-
               The best way You can use our online complaints form.<br>
               Your complaint will be recorded and dealt with by the most appropriate team or person.<br></p>
 
@@ -91,7 +87,7 @@
 
   </div>
     <footer>
-        <br><br>&copy; 2019 <?php echo $web_name; ?>
+        <br><br><?php echo $web_name; ?>
     </footer>
 
     <script src="../files/js/jquery.js"></script>

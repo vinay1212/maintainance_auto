@@ -32,7 +32,7 @@
 
 
    <div class="cover main">
-     <h1>Forward message</h1>
+     <h1>Assigning Complaints to Engineers</h1>
    </div>
 
    <div class="div">
@@ -40,16 +40,14 @@
      <div class="col-lg-12">
      <?php
      $no=1;
-       $db=mysql_query("SELECT * FROM `dummy` WHERE id = $id_d");
+       $db=mysql_query("SELECT * FROM `dummy` WHERE id = '$id_d'");
        while($data=mysql_fetch_array($db)) {
-           $name = $data['name'];
-             }
+          $name = $data['name'];
+        }
      ?>
-     <h2>You  sending this message to <?php echo $name ; ?></h2>
+     <h2>This complaint is assigned to :<?php echo "     <td> ".$name."</td>"; ?></h2>
       <br><br>
-
-
-
+      
      <br><br>
  <table>
  <?php
@@ -68,7 +66,7 @@
 
    }
 
-      echo "<tr> <td> <b> Message Id </b> </td>";
+      echo "<tr> <td> <b> Complaint Id </b> </td>";
       echo "     <td> ".$id."</td> </tr>";
 
       echo "<tr> <td> <b> Profile Id </b> </td>";
@@ -83,10 +81,10 @@
       echo "<tr> <td> <b> Phone no </b> </td>";
       echo "     <td> ".$phone_no."</td> </tr>";
 
-      echo "<tr> <td> <b> Subject </b> </td>";
+      echo "<tr> <td> <b> Loacation </b> </td>";
       echo "     <td> ".$subject."</td> </tr>";
 
-      echo "<tr> <td> <b> Complain </b> </td>";
+      echo "<tr> <td> <b> Complaint </b> </td>";
       echo "     <td> ".$complain."</td></tr>";
 
       echo "<tr> <td> <b> Refference </b> </td>";
@@ -105,54 +103,37 @@
  $complain_e = mysql_real_escape_string($complain);
  $ref_e = mysql_real_escape_string($ref);
 
+ $query = mysql_query("SELECT ref_no FROM `view_cmp` WHERE ref_no=$ref");
+ if (mysql_num_rows($query) != 0){
+     #$message =  "This message is already send to the selected Engineer";
+   $message =   "<div class='alert errr' id='msg'>
+   <div class ='text-right' id='close'>
+       <svg class='pointer' fill='#FFF' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'>
+           <path d='M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z'/>
+           <path d='M0 0h24v24H0z' fill='none'/>
+       </svg>
+   </div>
 
- if(empty($_POST)===false){
-   $status = mysql_real_escape_string($_POST['status']);
+    <p>This message is already send to the selected Engineer</p>
+   </div>";
 
-   if(($status)==46){
-     $query = mysql_query("SELECT ref_no FROM `view_cmp` WHERE ref_no=$ref");
-       if (mysql_num_rows($query) != 0){
-           #$message =  "This message is already send to the selected Engineer";
-         $message =   "<div class='alert errr' id='msg'>
-         <div class ='text-right' id='close'>
-             <svg class='pointer' fill='#FFF' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'>
-                 <path d='M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z'/>
-                 <path d='M0 0h24v24H0z' fill='none'/>
-             </svg>
-         </div>
+ }else{
+   mysql_query("INSERT INTO `view_cmp` VALUES ('0','$ref_e','$name_e','$email_e','$phone_no_e','$subject_e','$complain_e','$id_d')") or die(mysql_error());
 
-          <p>This message is already send to the selected Engineer</p>
-         </div>";
-
-       }else{
-         mysql_query("INSERT INTO `view_cmp` VALUES ('0','$ref_e','$name_e','$email_e','$phone_no_e','$subject_e','$complain_e','$id_d')") or die(mysql_error());
-
-         $message =   "<div class='alert succ' id='msg'>
-         <div class ='text-right' id='close'>
-         <svg class='pointer' fill='#FFF' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'>
-             <path d='M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z'/>
-             <path d='M0 0h24v24H0z' fill='none'/>
-         </svg>
-           <p class='text-center'>Message successfully sent to the selected Engineer</p>
-         </div> </div>";
-       }
-   }else{
-          $message = "<div class='alert errr' id='msg'>
-          <div class ='text-right' id='close'>
-          <svg class='pointer' fill='#FFF' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'>
-              <path d='M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z'/>
-              <path d='M0 0h24v24H0z' fill='none'/>
-          </svg>
-            <p class='text-center'>Message Wasn't send !!</p>
-          </div> </div>";
-     }
+   $message =   "<div class='alert succ' id='msg'>
+   <div class ='text-right' id='close'>
+   <svg class='pointer' fill='#FFF' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'>
+       <path d='M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z'/>
+       <path d='M0 0h24v24H0z' fill='none'/>
+   </svg>
+     <p class='text-center'>Message successfully sent to the selected Engineer</p>
+   </div> </div>";
  }
  ?>
 
  <form class="" action="" method="post">
    <p><?php echo $message; ?> </p>
-   <input type="text" name="status" placeholder="23 + 23 = ?">
-   <input type="submit" class="frd" value="send">
+
  </form>
  <br><br><br>
 
@@ -160,7 +141,7 @@
 </div>
 
 <footer>
-  <br><br>&copy; 2019 <?php echo $web_name; ?>
+  <br><br><?php echo $web_name; ?>
 
 </footer>
 <script src="../files/js/jquery.js"></script>

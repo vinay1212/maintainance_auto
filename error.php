@@ -8,7 +8,8 @@
     <title>Error</title>
     <link rel="shortcut icon" href="files/img/ico.ico">
     <style media="screen">
-      *{padding: 0px;margin: 0px;font-family:"Gotham A", Gotham, "Gotham SSm A", "Gotham SSm B", "Gotham SSm", "Proxima Nova", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;font-weight: lighter;background:#fff ;
+      @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+      *{padding: 0px;margin: 0px;font-family:'Poppins';
       }
       .div{
         width:60%;

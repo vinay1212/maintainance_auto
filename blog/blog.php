@@ -1,5 +1,5 @@
 <?php
-  $web_name = "Hostel Management System";
+  $web_name = "LNMIIT Maintenance Automation System";
 ?>
 
 <!DOCTYPE html>
@@ -17,104 +17,61 @@
 
     <nav class="custom_nav">
         <ul>
-          <li><a href="../index.php">Login</a></li>
-          <li><a href="../signup.php">Signup</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="documentation.php">Documentaion</a></li>
+          <li><a href="../../index.html">Login</a></li>
+          <li><a href="documentation.php">Documentation</a></li>
         </ul>
     </nav>
 
   <div class="animated fadeIn">
     <header class="custom_header">
-        <h1>BLOG</h1>
+        <h1>Announcements</h1>
         <br><br>
-
     </header>
 
     <div class="col-lg-12">
 
       <div class="container">
         <br><br>
-        <h1>ARTICLES</h1>
+        <h1>New Announcements...</h1>
         <br><br><br>
         <div class="col-lg-12"><!--row 1-->
 
           <div class="col-lg-4">
             <div class="quotes blg text-center">
-              <h3>Tony Snow, Doctor</h3>
+              <!-- <h3>Tony Snow, Doctor</h3>
 
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
                 <br>
-                <a href="#" class="read">Read more</a>
-                <br><br><br><br>
-            </div>
+                <a href="#" class="read">Read more</a> -->
+                <div class="col-lg-12">
+            <h2>News Feed</h2>
+              <div class="posts">
+              <?php
+              $query = "SELECT * FROM `posts` ";
+                $db=mysql_query($query);
+                while($data=mysql_fetch_array($db)) {
+                  echo "<br> <br> <div class='quotes glow'> ";
+                  echo "<h4 class='heading'> Heading : ".$data['subject']."</h4>";
+                  echo "<p> Story : ".$data['story']."<br><br>";
+                  echo " Posted By : ".$data['session_name']."<br>";
 
-          </div>
+              echo "</p></div><br><br>";
 
-          <div class="col-lg-4">
-            <div class="quotes blg">
-              <h3>Christina Alen, Artist</h3>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
-                <a href="#" class="read">Read more</a>
-                <br><br><br><br>
-            </div>
-          </div>
-
-          <div class="col-lg-4">
-            <div class="quotes blg">
-              <h3>Ronnie Tyler, Singer</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.nisi ut aliquip ex ea commodo consequat.</p>
-                <a href="#" class="read">Read more</a>
-                <br><br><br><br>
-            </div>
-          </div>
-
-
-        </div>
-
-        <br><br><br>
-        <div class="col-lg-12"><!--row 2-->
-
-          <div class="col-lg-4">
-            <div class="quotes blg">
-              <h3>Tory Tyler, Politician</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <a href="#" class="read">Read more</a>
-                <br><br><br><br>
-            </div>
-
-          </div>
-
-
-            <div class="col-lg-4">
-              <div class="quotes blg">
-                <h3>Ronnie Tyler, Singer</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.nisi ut aliquip ex ea commodo consequat.</p>
-                  <a href="#" class="read">Read more</a>
-                  <br><br><br><br>
-              </div>
-            </div>
-
-
-          <div class="col-lg-4">
-            <div class="quotes blg">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.nisi ut aliquip ex ea commodo consequat.</p>
-                <a href="#" class="read">Read more</a>
-                <br><br><br><br>
-            </div>
+             }
+            ?>
           </div>
         </div>
-
-
-
+                <br><br><br><br>
+            </div>
+          </div>
+          
       </div>
     </div>
   </div>
 
     <footer>
-        <br><br>&copy; 2019 <?php echo $web_name; ?>
+        <br><br> <?php echo $web_name; ?>
     </footer>
 
     <script src="../files/js/jquery.js"></script>

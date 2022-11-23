@@ -15,9 +15,9 @@
 
         <ul class="dropdown-menu">
 
-          <li><a href="message.php">Message</a></li>
+          <li><a href="message.php">Complaint</a></li>
           <li role="separator" class="divider"></li>
-          <li><a href="logout.php" onClick="javascript:return confirm ('Are you really want to delete ?');">Logout</a></li>
+          <li><a href="logout.php" onClick="javascript:return confirm ('Do you want to logout ?');">Logout</a></li>
         </ul>
       </div>
 </div>

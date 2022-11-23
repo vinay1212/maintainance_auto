@@ -36,7 +36,7 @@
     </div>
 
       <footer>
-            <br><br>&copy 2019 <?php echo $web_name; ?>
+            <br><br><?php echo $web_name; ?>
       </footer>
 
     <script src="../files/js/jquery.js"></script>
