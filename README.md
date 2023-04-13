@@ -30,5 +30,3 @@ We have used three different actors in this project , thereby three different mo
 •	ENGINEER MODULE – The engineer module is for those engineers or workers who fix the complaints assigned to them and provide a feedback for the same.
 •	USER MODULE – The user module is for the hostel residents or even the staff who would want to complain.
 
-CONCLUSION
-This project can help save time in many aspects and will be of much use for students that need to fix problems at a faster rate. With our project, we aim at making a digital well-being and less time consuming way to register complaints in an organized and systematic manner in VIT’s database. Our project will be take our an idea evaluation for VIT’s software development circle.
